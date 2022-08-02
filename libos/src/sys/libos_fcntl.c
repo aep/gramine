@@ -131,6 +131,10 @@ static int flock_to_posix_lock(struct flock* fl, struct libos_handle* hdl, struc
     return 0;
 }
 
+long libos_syscall_flock(int fd, int cmd) {
+    return 0;
+}
+
 long libos_syscall_fcntl(int fd, int cmd, unsigned long arg) {
     int ret;
     int flags;
